@@ -5,7 +5,7 @@ join the discord  https://discord.gg/PMk4DstVka
 
 import subprocess
 
-print("Code by hhamzaa#9803 \njoin the discord  https://discord.gg/PMk4DstVka")
+print("Code by Dhanusha perera")
 
 # run the netsh wlan show profiles command which gets the saved network profiles and save the output in a variable
 data = subprocess.check_output(['netsh', 'wlan', 'show', 'profiles']).decode('utf-8').split('\n')
