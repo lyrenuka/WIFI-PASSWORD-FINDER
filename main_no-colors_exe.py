@@ -5,8 +5,7 @@ join the discord  https://discord.gg/PMk4DstVka
 
 import subprocess
 
-print("Code by Dhanusha perera")
-print("Code by Dhanusha perera")
+
 
 # run the netsh wlan show profiles command which gets the saved network profiles and save the output in a variable
 data = subprocess.check_output(['netsh', 'wlan', 'show', 'profiles']).decode('utf-8').split('\n')
@@ -32,20 +31,15 @@ inn = input("Press q to close or e to save the passwords to a file: ")
 # if the user presses e
 if inn == "e":
     # open a file to save the passwords
-    with open("passwords.txt", "w") as f:
+     code
         # loop through the profiles and write them to the file
-        for name in profiles:
+       code
             # same code as above
-            results = subprocess.check_output(['netsh', 'wlan', 'show', 'profile', name, 'key=clear']).decode('utf-8').split('\n')
-            results = [b.split(":")[1][1:-1] for b in results if "Key Content" in b]
+           code
             # try to write the password to the file
-            try:
-                f.write("{:<30}|  {:<} \n".format(name, results[0]))
-            except IndexError:
-                f.write("{:<30}|  {:<} \n".format(name, ""))
+         code
     # close the file
-    f.close()
-    print("Saved!")
+  code
 
 
 # if the user presses q
